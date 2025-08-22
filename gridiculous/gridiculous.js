@@ -1,0 +1,22 @@
+class Gridiculous {
+    initialize () {
+        addCSSSheets('', 'GridiculousCSS');
+    }
+}
+
+function addCSSSheets(url, id) {
+    let head = document.getElementsByTagName('head')[0];
+
+    let link = document.createElement('link');
+    link.id = id;
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = url;
+    link.media = 'all';
+
+    if (id == 'font') {
+        head.append(link);
+    } else {
+        head.prepend(link);
+    }
+}
