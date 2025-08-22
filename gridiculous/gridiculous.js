@@ -1,4 +1,3 @@
-import './widget.js';
 export class Gridiculous {
     initialize () {
         addCSSSheets('https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX---Gridiculous/gridiculous/css/style.css', 'GridiculousCSS');
