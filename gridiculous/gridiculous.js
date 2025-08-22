@@ -1,7 +1,9 @@
+import './widget.js';
 export class Gridiculous {
     initialize () {
         addCSSSheets('https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX---Gridiculous/gridiculous/css/style.css', 'GridiculousCSS');
         addJSCode('https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js', 'draguleJS');
+        addJSCode('./widget.js', 'widgets');
     }
 }
 
@@ -29,4 +31,6 @@ function addJSCode(url, id) {
     link.id = id;
     link.src = url;
     link.type = 'module';
+
+    head.append(link)
 }
