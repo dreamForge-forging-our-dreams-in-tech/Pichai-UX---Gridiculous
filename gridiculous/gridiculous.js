@@ -1,6 +1,7 @@
 export class Gridiculous {
     initialize () {
         addCSSSheets('https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX---Gridiculous/gridiculous/css/style.css', 'GridiculousCSS');
+        addJSCode('https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js', 'draguleJS');
     }
 }
 
@@ -19,4 +20,13 @@ function addCSSSheets(url, id) {
     } else {
         head.prepend(link);
     }
+}
+
+function addJSCode(url, id) {
+    let head = document.getElementsByTagName('head')[0];
+
+    let link = document.createElement('script');
+    link.id = id;
+    link.src = url;
+    link.type = 'module';
 }
