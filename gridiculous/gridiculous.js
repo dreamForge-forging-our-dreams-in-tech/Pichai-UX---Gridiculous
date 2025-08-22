@@ -7,6 +7,8 @@ export class Gridiculous {
     }
 }
 
+
+// functions to inject JS or CSS files
 function addCSSSheets(url, id) {
     let head = document.getElementsByTagName('head')[0];
 
