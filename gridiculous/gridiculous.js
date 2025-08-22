@@ -1,6 +1,6 @@
 export class Gridiculous {
     initialize () {
-        addCSSSheets('https://raw.githubusercontent.com/dreamForge-forging-our-dreams-in-tech/Pichai-UX---Gridiculous/refs/heads/main/gridiculous/css/style.css', 'GridiculousCSS');
+        addCSSSheets('https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX---Gridiculous/gridiculous/css/style.css', 'GridiculousCSS');
     }
 }
 
