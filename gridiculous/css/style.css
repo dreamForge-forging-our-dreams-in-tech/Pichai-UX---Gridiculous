@@ -9,7 +9,8 @@ body, html {
     gap: 20px;
 }
 
-widget {
+/* Class for any element that is being edited */
+.editing {
     resize: both;
     overflow:auto;
 }
