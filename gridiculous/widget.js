@@ -1,5 +1,5 @@
 // Create a class for the element
-class Widgets extends HTMLElement {
+class Group extends HTMLElement {
     constructor() {
         // Always call super first in constructor
         super();
@@ -10,4 +10,4 @@ class Widgets extends HTMLElement {
     }
 }
 
-customElements.define("widgets", Widgets);
+customElements.define("group", Group);
